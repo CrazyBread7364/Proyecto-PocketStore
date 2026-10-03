@@ -285,3 +285,4 @@ Observaciones sobre el código actual, útiles como siguientes pasos:
 - **Seguridad al renderizar:** `innerHTML +=` con datos externos podría permitir inyección de HTML si la fuente no es confiable; es preferible usar `textContent` o `createElement`. Además, reasignar `innerHTML` en cada iteración es ineficiente.
 - **Manejo de errores en la UI:** si falla el `fetch`, el usuario sigue viendo «Cargando datos...»; debería mostrarse un mensaje de error.
 - **Versionado de caché manual:** hay que recordar cambiar `CACHE_NAME` cada vez que se modifican los archivos del *app shell*.
+End
