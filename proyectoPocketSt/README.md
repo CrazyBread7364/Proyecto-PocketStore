@@ -279,7 +279,6 @@ Observaciones sobre el código actual, útiles como siguientes pasos:
 
 - **Datos obsoletos:** con *Cache First*, la respuesta de la API se guarda una vez y ya no se actualiza mientras exista en la caché. Una mejora es usar *Stale-While-Revalidate* o *Network First* para las peticiones a la API.
 - **Sin respaldo offline:** si un recurso no está en caché y no hay red, el `catch` del Service Worker solo escribe en consola y no devuelve una respuesta alternativa (podría servirse `index.html` u otra página offline).
-- **Comentario desactualizado en `app.js`:** el comentario dice «primeros 10 elementos», pero el código usa `slice(0, 5)` (5 elementos).
 - **Colores inconsistentes:** `theme-color` en `index.html` es `#ffffff`, mientras que en `manifest.json` es `#000000`, y el encabezado usa `#007bff`.
 - **Íconos:** ambos están declarados como 512×512; conviene incluir tamaños adicionales (192×192) y un ícono `maskable` para una mejor instalación.
 - **Seguridad al renderizar:** `innerHTML +=` con datos externos podría permitir inyección de HTML si la fuente no es confiable; es preferible usar `textContent` o `createElement`. Además, reasignar `innerHTML` en cada iteración es ineficiente.
