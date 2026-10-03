@@ -5,7 +5,7 @@ const container = document.getElementById('app-container');
 fetch('https://jsonplaceholder.typicode.com/posts')
   .then(response => response.json())
   .then(data => {
-    // Tomamos solo los primeros 10 elementos
+    // Tomamos solo los primeros 5 elementos
     const items = data.slice(0, 5);
     
     // Limpiamos el texto de "Cargando..."
