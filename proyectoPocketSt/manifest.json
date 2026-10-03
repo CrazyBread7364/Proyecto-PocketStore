@@ -1,0 +1,21 @@
+{
+    "name": "PocketStore - Catalog_Offline",
+    "short_name": "PocketStore",
+    "description": "PocketStore - Catalog_Offline",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": [
+        {
+            "src": "./images/icons/icono1.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "./images/icons/icono2.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
